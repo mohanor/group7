@@ -386,3 +386,7 @@ textarea {
 .footer-list img {
     height: 30px;
 }
+
+.slick-dots li button::before {
+    font-size: 24px !important;
+}
