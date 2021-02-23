@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #212f54;
 }
 
 .media {
@@ -112,11 +114,12 @@
 .lt h3 {
     margin-bottom: 15px;
     font-size: 30px;
+    color: #212f54;
 }
 
 .lt h3::after {
     content: '';
-    height: 2px;
+    height: 4px;
     width: 30px;
     background-color: hsl(224deg 44% 23%);
     display: block;
@@ -127,6 +130,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    margin-top: 26px;
 }
 
 .btn {
@@ -175,9 +179,9 @@
 .div-img2 {
     background-color: hsl(224deg 44% 23%);
 }
+
 .div-img p {
     padding: 3px 20px;
-    color: black;
 }
 
 .div-img2 p {
@@ -190,15 +194,6 @@
     width: 85%;
 }
 
-.line::after {
-    content: '';
-    height: 2px;
-    width: 30px;
-    background-color: hsl(224deg 44% 23%);
-    display: block;
-    margin: 0 auto;
-}
-
 .last-project {
     text-align: center;
     margin: 50px 0;
@@ -209,8 +204,9 @@
 }
 
 .img-slick {
-    width: 100%;
-    height: 320px;
+    width: 80%;
+    height: 348px;
+    margin: 0 auto;
     object-fit: cover;
 }
 
@@ -219,7 +215,9 @@
 }
 
 .center-div div {
-    padding: 15px;
+    padding: 15px 0;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .center-div div p {
@@ -283,6 +281,10 @@ input,textarea {
     box-sizing: border-box;
 }
 
+input:focus, textarea:focus {
+    outline: none;
+}
+
 textarea {
     height: 80px;
 }
@@ -331,21 +333,30 @@ textarea {
 .footer {
     padding-top: 20px;
     text-align: center;
-    background-color: hsl(207deg 5% 63%);
+    background-color: #2a2a2a;
+}
+
+.footer p {
+    color: white;
 }
 
 .footer div {
     padding: 20px;
 }
+
 .footer div h3{
     margin-bottom: 10px;
+    color: #677077;
 }
 
 .copywrite {
-    background: #545252;
+    background: #222;
     padding: 20px;
-    color: #fff;
     direction: rtl;
+}
+
+.copywrite strong {
+    color: #677077 ;
 }
 
 
@@ -389,4 +400,16 @@ textarea {
 
 .slick-dots li button::before {
     font-size: 24px !important;
+}
+
+.lt h3 {
+    line-height: 2;
+}
+
+.info p {
+    color: white;
+}
+
+.all-service p {
+    color: white;
 }
