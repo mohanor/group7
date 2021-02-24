@@ -1,0 +1,135 @@
+
+html {
+    direction: rtl;
+    font-family: 'Roboto', sans-serif;
+    color: #212f54;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    max-width: 1340px;
+}
+
+
+
+.text {
+    font-size: 49px;
+    line-height: 76px;
+}
+
+.hero__image svg {
+    max-width: 200px;
+}
+
+.hero__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 16px;
+}
+
+.kintaro-article {
+    margin: 20px 30px;
+}
+
+.kintaro-article__blockquote{
+    margin-top: 0px;
+    max-width: 467px;
+    font-size: 24px;
+    line-height: 36px;
+    border-right: 4px solid #212f54;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.kintaro-article p {
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+.options__cards__card__content {
+    flex: 1;
+    padding: 16px;
+}
+
+@media (min-width: 768px){
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero--article .hero__image svg {
+        max-width: 206px;
+    }
+
+    .hero__content {
+        text-align: right;
+        margin: 0 0% 0 0;
+        padding: 30px 0;
+    }
+
+    .hero--article {
+        margin-bottom: 80px;
+        margin-top: 0px;
+        padding-top: 60px;
+    }
+
+    .kintaro-article {
+        margin: 40px;
+        max-width: 800px;
+    }
+
+    .hero__subtitle {
+        font-size: 23px;
+        line-height: 36px;
+    }
+
+    .hero__title {
+        text-align: center;
+    }
+
+    .hero__subtitle {
+        font-size: 23px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px){
+    .kintaro-article {
+        margin: 40px auto;
+    }
+    .hero {
+        margin: 15px auto 0;
+        padding-right: 70px;
+        align-items: center;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 50% 30%;
+    }
+
+    .hero__title {
+        font-size: 64px;
+        line-height: 76px;
+        text-align:right;
+    }
+
+    .hero__subtitle{
+        text-align: right;
+    }
+
+   
+    .kintaro-article h3 {
+        font-size: 22px;
+        line-height: 34px;
+    }
+}

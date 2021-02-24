@@ -414,3 +414,9 @@ textarea {
 .all-service p {
     color: white;
 }
+
+.more-link {
+    color: white;
+    margin-top: 10px;
+    display: block;
+}
