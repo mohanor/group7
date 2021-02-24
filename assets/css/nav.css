@@ -66,8 +66,7 @@
   .menu {
     position: absolute;
     left: 0;
-    top: 0;
-    padding-left: 111px;
+    padding-left: 84px;
     width: 650px;
     height: 150px;
     box-sizing: border-box;
@@ -141,6 +140,7 @@
 
     .menu {
       position: fixed;
+      padding-left: 111px;
     }
 
     .menu-open:checked ~ .menu-item:nth-child(3) {
