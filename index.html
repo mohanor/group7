@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mobile-menu.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/slick.css">
     <link rel="stylesheet" href="./assets/css/slick-theme.css">
@@ -16,7 +17,41 @@
     <title>Group 7 sr</title>
 </head>
 
-<body>
+<body id="body">
+
+
+
+    <nav id="nav" class="nav" role="navigation">
+
+        <!-- ACTUAL NAVIGATION MENU -->
+        <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+            <li class="nav__item"><a href="#" class="nav__link">من نحن</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">خدماتنا</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">شهادة الزبناء</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">إتصل بنا</a></li>
+            <!-- <li class="nav__item"><a href="#" class="nav__link">Contact</a></li> -->
+        </ul>
+
+        <!-- MENU TOGGLE BUTTON -->
+        <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <title>Toggle Menu</title>
+                <g>
+                    <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+                    <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+                    <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+                </g>
+            </svg>
+        </a>
+
+        <div class="splash"></div>
+
+    </nav>
+
+
+
     <div class="media">
         <div>
             <ul class="media-list">
@@ -82,7 +117,7 @@
                 <img src="./assets/media/logo.PNG" class="logo" alt="logo">
             </div>
             <div>
-                <img src="./assets/media/icon-hamburger.svg" class="hamburger" id='hamburger' alt="hamburger">
+                <!-- <img src="./assets/media/icon-hamburger.svg" class="hamburger" id='hamburger' alt="hamburger"> -->
                 <ul class="list">
                     <li class="item">
                         <a href="#" class="link">من نحن</a>

@@ -312,6 +312,10 @@
         padding: 15px;
         width: 94%;
     }
+
+    .nav{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 692px) {
