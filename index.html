@@ -2,6 +2,7 @@
 <html lang="ar">
 
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/media/logo/icon.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,27 +13,20 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/slick.css">
     <link rel="stylesheet" href="./assets/css/slick-theme.css">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     <title>Group 7 sr</title>
 </head>
 
 <body id="body">
 
-
-
     <nav id="nav" class="nav" role="navigation">
 
-        <!-- ACTUAL NAVIGATION MENU -->
         <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
-            <li class="nav__item"><a href="#" class="nav__link">من نحن</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">خدماتنا</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">شهادة الزبناء</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">إتصل بنا</a></li>
-            <!-- <li class="nav__item"><a href="#" class="nav__link">Contact</a></li> -->
+            <li class="nav__item"><a href="#home" class="nav__link scroll">الرئيسية</a></li>
+            <li class="nav__item"><a href="#who" class="nav__link scroll">من نحن</a></li>
+            <li class="nav__item"><a href="#service" class="nav__link scroll">خدماتنا</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link scroll">إتصل بنا</a></li>
         </ul>
 
-        <!-- MENU TOGGLE BUTTON -->
         <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
             <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
                 <title>Toggle Menu</title>
@@ -75,12 +69,20 @@
         <div>
             <ul class="media-list">
                 <li class="media-item info">
-                    <img src="./assets/media/media/Location.svg" class="media-img" alt="Location">
-                    <p>3 IMM CHERARDA BOURGOGNE CASABLANCA</p>
+                    <img src="./assets/media/media/Phone.svg" class="media-img" alt="Phone">
+                    <p>+212767 500515</p>
                 </li>
                 <li class="media-item info">
                     <img src="./assets/media/media/Phone.svg" class="media-img" alt="Phone">
-                    <p>0644227346 / 07 67500515 0634234506</p>
+                    <p>+212634 234506</p>
+                </li>
+                <li class="media-item info">
+                    <img src="./assets/media/media/Phone.svg" class="media-img" alt="Phone">
+                    <p>+121644 227346</p>
+                </li>
+                <li class="media-item info">
+                    <img src="./assets/media/media/email.svg" class="media-img" alt="Phone">
+                    <p>contact@group7sr.com</p>
                 </li>
             </ul>
         </div>
@@ -97,51 +99,77 @@
         </div>
         <ul class="mobile-list">
             <li class="mobile-item">
-                <a href="#" class="mobile-link">من نحن</a>
+                <a href="#home" class="mobile-link scroll">الرئيسية</a>
             </li>
             <li class="mobile-item">
-                <a href="#" class="mobile-link">خدماتنا</a>
+                <a href="#who" class="mobile-link scroll">من نحن</a>
             </li>
             <li class="mobile-item">
-                <a href="#" class="mobile-link">شهادة الزبناء</a>
+                <a href="#service" class="mobile-link scroll">خدماتنا</a>
             </li>
             <li class="mobile-item">
-                <a href="#" class="mobile-link">إتصل بنا</a>
+                <a href="#contact" class="mobile-link scroll">إتصل بنا</a>
             </li>
         </ul>
     </div>
 
-    <div class="menu">
+    <div class="menu scroll-menu" id="menu-scroll">
         <div class="div--logo">
-            <div>
-                <img src="./assets/media/logo.PNG" class="logo" alt="logo">
+            <div class="align-item-div">
+                <img src="./assets/media/logo/01011-01.svg" class="logo" alt="logo">
             </div>
             <div>
                 <!-- <img src="./assets/media/icon-hamburger.svg" class="hamburger" id='hamburger' alt="hamburger"> -->
                 <ul class="list">
                     <li class="item">
-                        <a href="#" class="link">من نحن</a>
+                        <a href="#home" class="link scroll">الرئيسية</a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link">خدماتنا</a>
+                        <a href="#who" class="link scroll">من نحن</a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link">شهادة الزبناء</a>
+                        <a href="#service" class="link scroll">خدماتنا</a>
                     </li>
                     <li class="item">
-                        <a href="#" class="link">إتصل بنا</a>
+                        <a href="#contact" class="link scroll">إتصل بنا</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <header class="header">
+
+    <div class="menu">
+        <div class="div--logo">
+            <div class="align-item-div">
+                <img src="./assets/media/logo/01011-01.svg" class="logo" alt="logo">
+            </div>
+            <div>
+                <!-- <img src="./assets/media/icon-hamburger.svg" class="hamburger" id='hamburger' alt="hamburger"> -->
+                <ul class="list">
+                    <li class="item">
+                        <a href="#home" class="link scroll">الرئيسية</a>
+                    </li>
+                    <li class="item">
+                        <a href="#who" class="link scroll">من نحن</a>
+                    </li>
+                    <li class="item">
+                        <a href="#service" class="link scroll">خدماتنا</a>
+                    </li>
+                    <li class="item">
+                        <a href="#contact" class="link scroll">إتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="home">
         <h1>نحن هنا <br> لنجعل عالمكم <br>امن نظيف صحي</h1>
     </header>
 
     <main>
-        <section class="how-we-are">
+        <section class="how-we-are" id="who">
             <div class="rg">
                 <img src="./assets/media/Leadership-Advisory-01-min.jpg" class="leader" alt="Leadership Advisory">
             </div>
@@ -265,14 +293,32 @@
             </div>
         </section>
 
-        <section class="all-service">
+        <section class="all-service" id="service">
+            <div class="text-center">
+                <h2 class="why-h2" style="color: white;text-align: center;">خدماتنا مميزة</h2>
+            </div>
             <div class="row all-row">
-                <div class="div-rel1 col-12 col-md-4 col-lg-4">
-                    <h3>خدماتنا مميزة</h3>
+
+                <div class="div-rel col-12 col-md-6 col-lg-4 col-xl-4">
+                    <svg class="div-rel-img" id="Layer_1" fill='white' enable-background="new 0 0 512.014 512.014"
+                        viewBox="0 0 512.014 512.014" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path
+                                d="m241.011 88.005c0-8.284-6.716-15-15-15s-15 6.716-15 15v57c0 8.284 6.716 15 15 15s15-6.716 15-15z" />
+                            <path
+                                d="m286.009 146.005c-8.284 0-15 6.716-15 15v50c0 8.284 6.716 15 15 15s15-6.716 15-15v-50c0-8.284-6.716-15-15-15z" />
+                            <path
+                                d="m252.01 261.005c-8.284 0-15 6.716-15 15v67c0 8.284 6.716 15 15 15s15-6.716 15-15v-67c0-8.284-6.716-15-15-15z" />
+                            <path
+                                d="m501.715 24.22-71.006-23.458c-2.41-.796-9.218-.756-10.154-.756h-335.545c-2.715 0-5.254.732-7.451 1.993l-67.26 22.22c-7.866 2.599-12.137 11.083-9.538 18.949s11.084 12.133 18.948 9.538l65.342-21.587 65.942 30.882v337.671c-1.11-.045-2.221-.075-3.336-.075-45.427 0-82.385 36.958-82.385 82.385 0 6.187.691 12.361 2.055 18.352 1.584 6.957 7.767 11.674 14.612 11.674 1.103 0 2.223-.122 3.343-.377 8.077-1.839 13.136-9.877 11.297-17.955-.867-3.809-1.307-7.743-1.307-11.693 0-28.885 23.5-52.385 52.385-52.385 12.604 0 24.781 4.539 34.289 12.78 3.092 2.679 7.142 3.979 11.214 3.602 4.073-.379 7.814-2.404 10.357-5.607 12.804-16.121 31.933-25.367 52.483-25.367 20.552 0 39.682 9.246 52.484 25.367 2.543 3.203 6.285 5.229 10.357 5.607 4.07.379 8.123-.923 11.214-3.602 9.508-8.241 21.686-12.78 34.289-12.78 28.885 0 52.385 23.5 52.385 52.385 0 3.945-.44 7.878-1.309 11.69-1.841 8.077 3.216 16.117 11.293 17.957 8.081 1.844 16.118-3.215 17.957-11.293 1.366-5.995 2.059-12.171 2.059-18.354 0-45.427-36.958-82.385-82.385-82.385-1.115 0-2.226.03-3.336.075v-337.667l65.953-30.887 65.342 21.587c7.863 2.595 16.349-1.672 18.948-9.538 2.601-7.866-1.67-16.35-9.536-18.948zm-179.455 386.934c-17.855-16.761-41.333-26.149-66.259-26.149-24.925 0-48.402 9.389-66.258 26.149-2.827-1.68-5.752-3.176-8.75-4.502v-353.647c0-.064-.009-.125-.01-.189.132-5.763-3.073-11.335-8.629-13.937l-18.947-8.873h205.198l-18.947 8.873c-5.469 2.561-8.653 8-8.626 13.666-.005.154-.023.305-.023.46v353.648c-2.997 1.326-5.922 2.822-8.749 4.501z" />
+                        </g>
+                    </svg>
+
                     <p>
-                        مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
-                        ومتكاملة ومتنوعة ومحايدة، يستطيع الجميع المساهمة في تحريرها. نشأت ويكيبيديا في عام 2001، حيث نمت
+                        توظف الشركة أفضل التقنيــات والأجهزة المتطورة لتوفير بيئة آمنة ومأمونة لزبنائــها. تضع الشركة
+                        جميع الخبرات والكفاءات الأمنية في خدمة العملاء.
                     </p>
+                    <a href="#" class="more-link">المزيد</a>
                 </div>
                 <div class="div-rel col-12 col-md-6 col-lg-4 col-xl-4">
                     <svg class="div-rel-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -314,9 +360,9 @@
 
                     <p>
                         مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
-                        ومتكاملة ومتنوعة ومحايدة، يستطيع الجميع المساهمة في تحريرها. نشأت ويكيبيديا في عام 2001، حيث
+                        ومتكاملة ومتنوعة ومحايدة، يستطيع الجميع المساهمة في تحريرها
                     </p>
-                    <a href="#" class="more-link">1المزيد</a>
+                    <a href="#" class="more-link">المزيد</a>
                 </div>
                 <div class="div-rel col-12 col-md-6 col-lg-4 col-xl-4">
                     <svg class="div-rel-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -334,10 +380,10 @@
                     </svg>
 
                     <p>
-                        مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
-                        ومتكاملة ومتنوعة ومحايدة، يستطيع الجميع المساهمة في تحريرها. نشأت ويكيبيديا في عام 2001، حيث
+                        توظف الشركة أفضل التقنيــات والأجهزة المتطورة لتوفير بيئة آمنة ومأمونة لزبنائــها. تضع الشركة
+                        جميع الخبرات والكفاءات الأمنية في خدمة العملاء.
                     </p>
-                    <a href="#" class="more-link">5المزيد</a>
+                    <a href="#" class="more-link">المزيد</a>
                 </div>
                 <div class="div-rel col-12 col-md-6 col-lg-4 col-xl-4">
                     <svg class="div-rel-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -393,10 +439,10 @@
                                 c-5.2-1.3-16-1.3-21.9-0.2c0-1.7,0-3.5,0-5.2c0-1,0-2.1,0-3.1C45.7,28.5,56.4,28.4,61.6,27.2L61.6,27.2z" />
                     </svg>
                     <p>
-                        مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
-                        ومتكاملة ومتنوعة ومحايدة، يستطيع الجميع المساهمة في تحريرها. نشأت ويكيبيديا في عام 2001، حيث
+                        قولوا وداعا لمشاكل صيانة مسبحكم. واقضوا أوقات رائعة رفقة أصدقائكم وعائلاتكم. ففريق عملنا سيتكلف
+                        بكل مراحل صيانة حوض سباحتكم.
                     </p>
-                    <a href="./more/info.html" class="more-link">2المزيد</a>
+                    <a href="./more/info.html" class="more-link">المزيد</a>
                 </div>
                 <div class="div-rel col-12 col-md-6 col-lg-4 col-xl-4">
                     <svg class="div-rel-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -437,10 +483,10 @@
                         </g>
                     </svg>
                     <p>
-                        مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
-                        ومتكاملة ومتنوعة ومحايدة، يستطيع الجميع المساهمة في تحريرها. نشأت ويكيبيديا في عام 2001، حيث
+                        ترغبون في إنشاء وتطوير مساحاتكم الخضراء، أو الصيانة والاعتناء بحديقة منزلكم أو ببساطة تركيب نظام
+                        للري الأوتوماتيكي، تتوفر شركتنا، على المهارات، الخبرات والوسائل لجعل حلمكم حقيقة
                     </p>
-                    <a href="#" class="more-link">3المزيد</a>
+                    <a href="#" class="more-link">المزيد</a>
                 </div>
                 <div class="div-rel col-12 col-md-6 col-lg-4 col-xl-4">
                     <svg class="div-rel-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -467,16 +513,16 @@
                         </g>
                     </svg>
                     <p>
-                        مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
-                        ومتكاملة ومتنوعة ومحايدة، يستطيع الجميع المساهمة في تحريرها. نشأت ويكيبيديا في عام 2001، حيث
+                        نتدخل لحماية البيئة المحيطة بإقامتكم ومبانيكم من مخاطر الطفيليات الضارة (العقارب، القوارض،
+                        الحشرات، الثعابين، …)
                     </p>
 
-                    <a href="#" class="more-link">4المزيد</a>
+                    <a href="./more/insects.html" class="more-link">المزيد</a>
                 </div>
             </div>
         </section>
 
-        <section class="map">
+        <section class="map" id="contact">
             <div>
                 <h2>اتصل لان</h2>
                 <div class="contact-text">
@@ -533,63 +579,66 @@
                 </div>
             </div>
 
-
-
-            <div id='map' style='width: 100%; height: 350px;'></div>
+            <div id='map' style='width: 100%; height: 350px;'>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.142248926524!2d-7.637483685313282!3d33.60161344879086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2f460856285%3A0x362590c3c6e1afcb!2sRue%20Chrarda%2C%20Casablanca%2020250!5e0!3m2!1sfr!2sma!4v1614847514933!5m2!1sfr!2sma"
+                    width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
 
         </section>
     </main>
 
-    <footer class="footer">
-
-        <div>
-            <h3>
-                من نحن
-            </h3>
-            <p>
-                مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
-
-            </p>
+    <footer class="parent-footer">
+        <div class="parent-logo">
+            <img src="./assets/media/logo/0101-01.svg" class="footer-logo" alt="">
         </div>
-        <div>
-            <h3>
-                موقعنا
-            </h3>
-            <p>
-                مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
+        <div class="footer">
+            <div>
+                <h3>
+                    من نحن
+                </h3>
+                <p>
+                    مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
 
-            </p>
+                </p>
+            </div>
+            <div>
+                <h3>
+                    موقعنا
+                </h3>
+                <p>
+                    3 IMM CHERARDA BOURGOGNE CASABLANCA
+                </p>
+            </div>
+            <div>
+                <h3>
+                    فريقنا
+                </h3>
+                <p>
+                    مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
+                </p>
+            </div>
+            <div>
+                <h3>تابعنا على</h3>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            <img src="./assets/media/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            <img src="./assets/media/whatsapp.svg" alt="whatsapp">
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-link">
+                            <img src="./assets/media/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h3>
-                فريقنا
-            </h3>
-            <p>
-                مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
-
-            </p>
-        </div>
-        <div>
-            <h3>تابعنا على</h3>
-            <ul class="footer-list">
-                <li class="footer-item">
-                    <a href="#" class="footer-link">
-                        <img src="./assets/media/facebook.svg" alt="facebook">
-                    </a>
-                </li>
-                <li class="footer-item">
-                    <a href="#" class="footer-link">
-                        <img src="./assets/media/whatsapp.svg" alt="whatsapp">
-                    </a>
-                </li>
-                <li class="footer-item">
-                    <a href="#" class="footer-link">
-                        <img src="./assets/media/linkedin.svg" alt="linkedin">
-                    </a>
-                </li>
-            </ul>
-        </div>
-
     </footer>
     <div class="copywrite">
         <strong>جميع الحقوق محفوظة ل group7sr</strong>
@@ -600,31 +649,6 @@
     <script src="./assets/js/main.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
-
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoibW9oYW1tZWQxMjUiLCJhIjoiY2tsY2ZicTA1MG9sZzJwczRudXlmOWJzYSJ9.KF443DqAhmG9sjI6ECqaww';
-
-        mapboxgl.setRTLTextPlugin(
-            'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js',
-            null,
-            true
-        );
-
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-8.014018, 31.646753],
-            zoom: 9,
-            scrollZoom: false,
-        });
-
-        const nav = new mapboxgl.NavigationControl();
-        map.addControl(nav)
-
-        var marker = new mapboxgl.Marker()
-            .setLngLat([-8.014018, 31.646753])
-            .addTo(map);
-    </script>
 
     <script>
         $('.center').slick({
@@ -661,6 +685,54 @@
                     }
                 }
             ]
+        })
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            var scrollLink = $('.scroll');
+
+            // Smooth scrolling
+            scrollLink.click(function (e) {
+                e.preventDefault();
+                var nav = $('#nav');
+                nav.removeClass['nav--open'];
+                $('body,html').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+
+                console.log(e)
+
+            });
+
+
+            // Active link switching
+            $(window).scroll(function () {
+                var scrollbarLocation = $(this).scrollTop();
+
+                scrollLink.each(function () {
+
+                    var sectionOffset = $(this.hash).offset().top - 20;
+
+                    if (sectionOffset <= scrollbarLocation) {
+                        $(this).parent().addClass('active');
+                        $(this).parent().siblings().removeClass('active');
+                    }
+                })
+
+            })
+
+        })
+
+    </script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const getMenu = document.getElementById('menu-scroll');
+
+            getMenu.classList.toggle("scroll-menu2", window.scrollY >= 47)
         })
     </script>
 

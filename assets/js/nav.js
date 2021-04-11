@@ -1,4 +1,3 @@
-const close = document.getElementById('close');
 const mobileMenu = document.getElementById('mobile-menu');
 // const hamburger = document.getElementById('hamburger');
 
@@ -7,10 +6,7 @@ const mobileMenu = document.getElementById('mobile-menu');
 //     hamburger.style.display = 'none'
 // });
 
-close.addEventListener('click', () => {
-    mobileMenu.style.display = 'none'
-    hamburger.style.display = 'block'
-})
+
 
 
 // 

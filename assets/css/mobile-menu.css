@@ -19,7 +19,7 @@
   background-color: hsl(224deg 44% 23%);
   outline: 0;
   right: 15px;
-  top: 15px;
+  top: 26px;
   cursor: pointer;
   border-radius: 50%;
   transition: background-color 0.15s linear;
@@ -67,17 +67,14 @@
   font-size: 29px;
 }
 
-.nav__link:hover, .nav__link:focus {
-  outline: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 .menuicon {
   display: block;
   cursor: pointer;
   color: white;
   transform: rotate(0deg);
   transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height: 40px;
+  width: 40px;
 }
 .menuicon__bar, .menuicon__circle {
   fill: none;

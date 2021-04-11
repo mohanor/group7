@@ -9,9 +9,21 @@
         height: 100%;
         object-fit: cover;
     }
+
+    .div-rel1, .div-rel {
+        width :411px;
+    }
+
+    .last-pr-p{
+        padding: 30px 0px 0px 70px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
+    #menu-scroll {
+        display: block;
+    }
+
     .media {
         background-color: #3e4a6a;
         display: block;
@@ -25,7 +37,7 @@
     
 
     .header {
-        background-image: url('../media/miguel-angel-sanz-g_zFN1kzOSE-unsplash-desktop-min.jpg');
+        /* background-image: url('../media/miguel-angel-sanz-g_zFN1kzOSE-unsplash-desktop-min.jpg'); */
         height: 561px;
     }
 
@@ -48,11 +60,16 @@
     .footer {
         display: flex;
         flex-direction: row-reverse;
-        padding: 60px 20px
+        padding: 32px 20px
     }
 
     .footer div {
         padding: 30px;
+        width: 25%;
+    }
+
+    .footer-logo {
+        width: 300px;
     }
 
     .list img {
@@ -72,7 +89,8 @@
 
     .div-rel1, .div-rel {
         margin: 40px 10px;
-        width :412px;
+        /* width :411px; */
+        width: 357px;
         height: 220px;
         padding: 54px 34px;
     }
@@ -152,6 +170,7 @@
         flex-direction: row-reverse;
         width: 80%;
         margin: 80px auto;
+        justify-content: space-between;
     }
 
     .center1{
@@ -160,10 +179,6 @@
 
     .center {
         width: 50%;
-    }
-    
-    .img-slick {
-        height: 240px;
     }
 
     .slick-initialized .slick-slide{
@@ -190,7 +205,7 @@
         text-align: right;
         font-size: 19px;
         line-height: 1.7;
-        padding: 30px 0px 0px 70px;
+        padding: 30px 0px 0px 0px;
     }
 
     textarea {
@@ -270,6 +285,7 @@
         box-sizing: border-box;
         padding: 7px;
         display: flex;
+        align-items: center;
         justify-content: space-around;
     }
    
@@ -284,18 +300,30 @@
     }
 
     .media-img {
-        height: 30px;
+        height: 20px;
     }
 
     .info {
         display: flex;
         color: white;
+        line-height: 1.5;
     }
 
     .info p {
         max-width: 229px;
-        font-size: 15px;
-        margin-left: 13px;
+        font-size: 14px;
+        margin-left: 6px;
+        color: #f7bd4c;
+    }
+
+    
+
+    .info:hover {
+        filter: grayscale(100%) sepia(100%);
+    }
+
+    .media-img:hover {
+        filter: grayscale(100%) sepia(100%);
     }
 
     .header h1 {
@@ -304,7 +332,7 @@
 
     .img-slick {
         width: 100%;
-        height: 280px;
+        height: 200px;
         object-fit: cover;
     }
     
