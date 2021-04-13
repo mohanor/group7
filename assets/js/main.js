@@ -1,5 +1,5 @@
-const close = document.getElementById('close');
-const mobileMenu = document.getElementById('mobile-menu');
+// const close = document.getElementById('close');
+// const mobileMenu = document.getElementById('mobile-menu');
 // const hamburger = document.getElementById('hamburger');
 
 // hamburger.addEventListener('click', () => {
@@ -7,10 +7,10 @@ const mobileMenu = document.getElementById('mobile-menu');
 //     hamburger.style.display = 'none'
 // });
 
-close.addEventListener('click', () => {
-    mobileMenu.style.display = 'none'
-    hamburger.style.display = 'block'
-})
+// close.addEventListener('click', () => {
+//     mobileMenu.style.display = 'none'
+//     hamburger.style.display = 'block'
+// })
 
 
 // 
@@ -23,7 +23,7 @@ const menuToggle = document.querySelector('.nav__toggle');
 let isMenuOpen = false;
 
 
-// TOGGLE MENU ACTIVE STATE
+// TOGGLE MENU ACTIVE STATE 
 menuToggle.addEventListener('click', e => {
     e.preventDefault();
     body.style.overflowX = 'hidden';
@@ -34,7 +34,6 @@ menuToggle.addEventListener('click', e => {
     menu.hidden = !isMenuOpen;
     nav.classList.toggle('nav--open');
 });
-
 
 for (let i = 0; i < scrollLinkjs.length; i++) {
     scrollLinkjs[i].addEventListener('click', () => {

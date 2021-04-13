@@ -24,11 +24,9 @@
     background-size: cover;
     background-position: center center;
     position: relative;
-    /* display: none; */
 }
 
 .info-disc {
-    /* background-position: center -340px; */
     background-image: url(https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
@@ -41,13 +39,11 @@
 }
 
 .falls {
-    
     background-image: url(https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 }
 
 .secerity {
     background-image: url(https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-position: center -124px;
 }
 
 .drop-down-list{
@@ -63,18 +59,11 @@
     left: 0;
     right: 0;
     overflow: hidden;
-    transition: height .3s;
     height: 63px;
-    transition: opacity .2s;
     box-shadow: 0 2px 4px -2px rgb(175 175 175 / 50%);
     box-sizing: border-box;
-    /* opacity: 0;
-    display: none; */
+    opacity: 0;
 }
-
-/* .list .item:hover .drop-down-list{
-    display: flex;
-} */
 
 .drop-down-list li {
     padding: 4px 30px;
@@ -90,7 +79,7 @@
 
 .serv::after{
     position: absolute;
-    left: 37%;
+    left: 28.5%;
     top: 122px;
     transform: translateX(-50%);
     background: white;
@@ -102,13 +91,17 @@
     transform: rotate( 
     45deg
     ) translateX(-6px);
-    transition: opacity 0.2s;
     width: 8px;
     z-index: 9;
 }
 
 .serv:hover::after {
     opacity: 1;
+}
+
+.serv:hover .drop-down-list {
+    opacity: 1;
+    z-index: 9;
 }
 
 
@@ -128,14 +121,14 @@
         box-sizing: border-box;
         padding: 7px;
         display: flex;
+        align-items: center;
         justify-content: space-around;
         background-color: #3e4a6a;
         flex-direction: row-reverse;
     }
 
     .media-img {
-        height: 30px;
-        margin-right: 20px;
+        height: 20px;
     }
 
     .media-list {
@@ -147,20 +140,19 @@
 
     .info {
         display: flex;
-        color: white;
-        flex-direction: row-reverse;
+        align-items: center;
     }
 
     .info p {
         max-width: 229px;
-        font-size: 15px;
-        margin-left: 11px;
-        text-align: left;
-        margin: 0;
+        font-size: 14px;
+        margin-left: 6px;
+        color: #f7bd4c;
     }
 
     .media-list {
         display: flex;
+        direction: ltr;
         list-style-type: none;
     }
 
@@ -177,6 +169,22 @@
 
     .list .item {
         padding: 26px;
+    }
+
+    .media-item {
+        padding: 0 8px;
+    }
+
+    .info:hover {
+        filter: grayscale(100%) sepia(100%);
+    }
+
+    .media-img:hover {
+        filter: grayscale(100%) sepia(100%);
+    }
+
+    .secerity {
+        background-position: center -124px;
     }
     
 }

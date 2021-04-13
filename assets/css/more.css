@@ -10,6 +10,10 @@ body{
     margin: 0;
 }
 
+#menu-scroll {
+    display: none;
+}
+
 .hero {
     text-align: center;
     display: flex;
@@ -18,7 +22,9 @@ body{
     max-width: 1340px;
 }
 
-
+.main {
+    direction: ltr;
+}
 
 .text {
     font-size: 30px;
@@ -96,7 +102,56 @@ menu {
     margin-top: 10px;
 }
 
+.nav__menu {
+    margin-top: 0;
+    list-style-type: none;
+}
+
+.div--logo {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+
+
 @media (min-width: 768px){
+
+    #menu-scroll {
+        display: block;
+    }
+
+    .main {
+        direction: rtl;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .scroll-menu {
+        position: fixed !important;
+        top: -84px;
+        left: 0;
+        right: 0;
+        z-index: 999999;
+        background: white;
+        box-shadow: 0 2px 4px -2px rgb(175 175 175 / 50%);
+        transition: top .3s;
+    }
+
+    .div--logo {
+        padding: 0;
+    }
+
+    .scroll-menu2 {
+        top: 0;
+    }
+
+    .align-item-div {
+        display: flex;
+        align-items: center;
+    }
 
     .hero__content {
         left: 46%;

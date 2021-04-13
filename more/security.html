@@ -13,9 +13,46 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/homenav.css">
+    <link rel="stylesheet" href="../assets/css/mobile-menu.css">
 </head>
 
-<body>
+<body id="body">
+
+    <nav id="nav" class="nav" role="navigation">
+
+        <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+            <li class="nav__item"><a href="../index.html" class="nav__link scroll">الرئيسية</a></li>
+
+            <li class="nav__item ourServiceMenu">
+                <span class="nav__link scroll">خدماتنا</span>
+                <ul class="nav__menu-childList">
+                    <li><a href="jardins.html">البستنة</a></li>
+                    <li><a href="info.html">صيانة مسابح</a></li>
+                    <li><a href="waterfall.html">تصميم الشلالات</a></li>
+                    <li><a href="security.html">الأمن والحماية</a></li>
+                    <li><a href="clean.html">النظافة</a></li>
+                    <li><a href="insects.html">مكافحة الحشرات</a></li>
+                </ul>
+            </li>
+            <li class="nav__item"><a href="../index.html#contact" class="nav__link scroll">إتصل بنا</a></li>
+        </ul>
+
+        <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <title>Toggle Menu</title>
+                <g>
+                    <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+                    <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+                    <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+                </g>
+            </svg>
+        </a>
+
+        <div class="splash"></div>
+
+    </nav>
 
     <div class="media">
         <div>
@@ -40,34 +77,59 @@
         <div>
             <ul class="media-list">
                 <li class="media-item info">
-                    <img src="../assets/media/media/Location.svg" class="media-img" alt="Location">
-                    <p>3 IMM CHERARDA BOURGOGNE CASABLANCA</p>
+                    <img src="../assets/media/media/Phone.svg" class="media-img" alt="Phone">
+                    <p>+212767 500515</p>
                 </li>
                 <li class="media-item info">
                     <img src="../assets/media/media/Phone.svg" class="media-img" alt="Phone">
-                    <p>0644227346 / 07 67500515 0634234506</p>
+                    <p>+212634 234506</p>
+                </li>
+                <li class="media-item info">
+                    <img src="../assets/media/media/Phone.svg" class="media-img" alt="Phone">
+                    <p>+121644 227346</p>
+                </li>
+                <li class="media-item info">
+                    <img src="../assets/media/media/email.svg" class="media-img" alt="Phone">
+                    <p>contact@group7sr.com</p>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div class="main scroll-menu" id="menu-scroll">
+        <div class="div--logo">
+            <div class="align-item-div">
+                <img src="../assets/media/logo/01011-01.svg" class="logo" alt="logo">
+            </div>
+            <div>
+                <ul class="list">
+                    <li class="item">
+                        <a href="../index.html" class="link scroll">الرئيسية</a>
+                    </li>
+                    <li class="item">
+                        <a href="#service" class="link scroll">خدماتنا</a>
+                    </li>
+                    <li class="item">
+                        <a href="#contact" class="link scroll">إتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="main">
         <div class="div--logo">
             <div class="parent-logo">
-                <img src="../assets/media/logo.PNG" class="logo" alt="logo">
+                <img src="../assets/media/logo/01011-01.svg" class="logo" alt="logo">
             </div>
             <div>
-                <!-- <img src="./assets/media/icon-hamburger.svg" class="hamburger" id='hamburger' alt="hamburger"> -->
                 <ul class="list">
                     <li class="item">
-                        <a href="#" class="link">الرئيسية</a>
-                    </li>
-                    <li class="item">
-                        <a href="../index.html" class="link">من نحن</a>
+                        <a href="../index.html" class="link">الرئيسية</a>
                     </li>
                     <li class="item serv">
-                        <a href="#" class="link">خدماتنا</a>
-                        <ul class="drop-down-list">
+                        <a href="#aaaa" class="link">خدماتنا</a>
+                        <ul class="drop-down-list" id="dropdown">
                             <li>
                                 <a href="waterfall.html">تصميم الشلالات</a>
                             </li>
@@ -90,7 +152,7 @@
                     </li>
 
                     <li class="item">
-                        <a href="#" class="link">إتصل بنا</a>
+                        <a href="../index.html#contact" class="link">إتصل بنا</a>
                     </li>
                 </ul>
             </div>
@@ -98,10 +160,6 @@
     </div>
 
     <div class="img-disc secerity">
-
-    </div>
-
-    <header class="hero hero--article ng-scope">
         <div class="hero__content">
             <div class="hero__title  ">
                 <span aria-level="2" role="heading" class="text">
@@ -112,22 +170,12 @@
                 تقدم الشركة خدمات امنية بمواصفــات عالميــة
             </div>
         </div>
-        <div class="hero__image ">
-            <svg class="div-rel-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 125"
-                style="enable-background:new 0 0 100 125;fill:#f7bd4c;" xml:space="preserve">
-                <g>
-                    <path
-                        d="M91.1,39.1C91,36.5,91,34,91,31.6c0-1.9-1.5-3.4-3.4-3.4c-14.7-0.1-25.9-4.3-35.2-13.3c-1.3-1.3-3.5-1.3-4.8,0
-                                c-9.3,9-20.5,13.2-35.1,13.2c-1.9,0-3.4,1.5-3.4,3.4c0,2.4,0,4.9-0.1,7.6c-0.5,24.7-1.2,58.4,39.9,72.6c0.4,0.1,0.7,0.2,1.1,0.2
-                                c0.4,0,0.8-0.1,1.1-0.2C92.2,97.5,91.5,63.8,91.1,39.1z M50,104.8C14.8,92,15.3,64,15.8,39.3c0-1.5,0.1-2.9,0.1-4.3
-                                c13.7-0.7,24.7-4.8,34.1-13c9.4,8.2,20.4,12.4,34.1,12.9c0,1.4,0,2.8,0.1,4.3C84.7,64,85.2,92,50,104.8z" />
-                    <path d="M61.8,51L45.3,67.5l-7.1-7.1c-1.3-1.3-3.5-1.3-4.9,0c-1.3,1.3-1.3,3.5,0,4.9l9.5,9.5c0.7,0.7,1.5,1,2.4,1s1.8-0.3,2.4-1
-                                l19-19c1.3-1.3,1.3-3.5,0-4.9C65.3,49.6,63.1,49.6,61.8,51z" />
-                </g>
-            </svg>
-        </div>
+    </div>
+
+    <header class="hero hero--article ng-scope">
+
     </header>
+
     <main>
         <section class="kintaro-article">
             <p>
@@ -202,9 +250,20 @@
             </p>
         </section>
     </main>
+
     <footer id="footer"></footer>
+
     <script src="../assets/js/footer.js"></script>
     <script src="../assets/js/main.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const getMenu = document.getElementById('menu-scroll');
+
+            getMenu.classList.toggle("scroll-menu2", window.scrollY >= 47)
+        })
+    </script>
+
 </body>
 
 </html>

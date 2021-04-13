@@ -13,9 +13,46 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/homenav.css">
+    <link rel="stylesheet" href="../assets/css/mobile-menu.css">
 </head>
 
-<body>
+<body id="body">
+
+    <nav id="nav" class="nav" role="navigation">
+
+        <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+            <li class="nav__item"><a href="../index.html" class="nav__link scroll">الرئيسية</a></li>
+
+            <li class="nav__item ourServiceMenu">
+                <span class="nav__link scroll">خدماتنا</span>
+                <ul class="nav__menu-childList">
+                    <li><a href="jardins.html">البستنة</a></li>
+                    <li><a href="info.html">صيانة مسابح</a></li>
+                    <li><a href="waterfall.html">تصميم الشلالات</a></li>
+                    <li><a href="security.html">الأمن والحماية</a></li>
+                    <li><a href="clean.html">النظافة</a></li>
+                    <li><a href="insects.html">مكافحة الحشرات</a></li>
+                </ul>
+            </li>
+            <li class="nav__item"><a href="../index.html#contact" class="nav__link scroll">إتصل بنا</a></li>
+        </ul>
+
+        <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <title>Toggle Menu</title>
+                <g>
+                    <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+                    <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+                    <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+                </g>
+            </svg>
+        </a>
+
+        <div class="splash"></div>
+
+    </nav>
 
     <div class="media">
         <div>
@@ -40,34 +77,59 @@
         <div>
             <ul class="media-list">
                 <li class="media-item info">
-                    <img src="../assets/media/media/Location.svg" class="media-img" alt="Location">
-                    <p>3 IMM CHERARDA BOURGOGNE CASABLANCA</p>
+                    <img src="../assets/media/media/Phone.svg" class="media-img" alt="Phone">
+                    <p>+212767 500515</p>
                 </li>
                 <li class="media-item info">
                     <img src="../assets/media/media/Phone.svg" class="media-img" alt="Phone">
-                    <p>0644227346 / 07 67500515 0634234506</p>
+                    <p>+212634 234506</p>
+                </li>
+                <li class="media-item info">
+                    <img src="../assets/media/media/Phone.svg" class="media-img" alt="Phone">
+                    <p>+121644 227346</p>
+                </li>
+                <li class="media-item info">
+                    <img src="../assets/media/media/email.svg" class="media-img" alt="Phone">
+                    <p>contact@group7sr.com</p>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div class="main scroll-menu" id="menu-scroll">
+        <div class="div--logo">
+            <div class="align-item-div">
+                <img src="../assets/media/logo/01011-01.svg" class="logo" alt="logo">
+            </div>
+            <div>
+                <ul class="list">
+                    <li class="item">
+                        <a href="../index.html" class="link scroll">الرئيسية</a>
+                    </li>
+                    <li class="item">
+                        <a href="#service" class="link scroll">خدماتنا</a>
+                    </li>
+                    <li class="item">
+                        <a href="#contact" class="link scroll">إتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="main">
         <div class="div--logo">
             <div class="parent-logo">
-                <img src="../assets/media/logo.PNG" class="logo" alt="logo">
+                <img src="../assets/media/logo/01011-01.svg" class="logo" alt="logo">
             </div>
             <div>
-                <!-- <img src="./assets/media/icon-hamburger.svg" class="hamburger" id='hamburger' alt="hamburger"> -->
                 <ul class="list">
                     <li class="item">
-                        <a href="#" class="link">الرئيسية</a>
-                    </li>
-                    <li class="item">
-                        <a href="../index.html" class="link">من نحن</a>
+                        <a href="../index.html" class="link">الرئيسية</a>
                     </li>
                     <li class="item serv">
-                        <a href="#" class="link">خدماتنا</a>
-                        <ul class="drop-down-list">
+                        <a href="#aaaa" class="link">خدماتنا</a>
+                        <ul class="drop-down-list" id="dropdown">
                             <li>
                                 <a href="waterfall.html">تصميم الشلالات</a>
                             </li>
@@ -90,7 +152,7 @@
                     </li>
 
                     <li class="item">
-                        <a href="#" class="link">إتصل بنا</a>
+                        <a href="../index.html#contact" class="link">إتصل بنا</a>
                     </li>
                 </ul>
             </div>
@@ -110,10 +172,8 @@
         </div>
     </div>
 
+    <header class="hero hero--article ng-scope"></header>
 
-    <header class="hero hero--article ng-scope">
-
-    </header>
     <main>
         <section class="kintaro-article">
 
@@ -205,20 +265,21 @@
 
         </section>
     </main>
+
     <footer id="footer"></footer>
+
     <script src="../assets/js/footer.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
     <script>
-        $(function () {
-            $('.drop-down-list').hide();
-            $('.serv').hover(function () {
-                $('.drop-down-list').slideDown();
-            }, function () {
-                $('.drop-down-list').slideUp();
-            });
+        window.addEventListener('scroll', function () {
+            const getMenu = document.getElementById('menu-scroll');
+
+            getMenu.classList.toggle("scroll-menu2", window.scrollY >= 47)
         })
     </script>
+
 </body>
 
 </html>

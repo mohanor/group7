@@ -13,9 +13,46 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/homenav.css">
+    <link rel="stylesheet" href="../assets/css/mobile-menu.css">
 </head>
 
-<body>
+<body id="body">
+
+    <nav id="nav" class="nav" role="navigation">
+
+        <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+            <li class="nav__item"><a href="../index.html" class="nav__link scroll">الرئيسية</a></li>
+
+            <li class="nav__item ourServiceMenu">
+                <span class="nav__link scroll">خدماتنا</span>
+                <ul class="nav__menu-childList">
+                    <li><a href="jardins.html">البستنة</a></li>
+                    <li><a href="info.html">صيانة مسابح</a></li>
+                    <li><a href="waterfall.html">تصميم الشلالات</a></li>
+                    <li><a href="security.html">الأمن والحماية</a></li>
+                    <li><a href="clean.html">النظافة</a></li>
+                    <li><a href="insects.html">مكافحة الحشرات</a></li>
+                </ul>
+            </li>
+            <li class="nav__item"><a href="../index.html#contact" class="nav__link scroll">إتصل بنا</a></li>
+        </ul>
+
+        <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+            <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <title>Toggle Menu</title>
+                <g>
+                    <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+                    <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+                    <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+                    <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+                </g>
+            </svg>
+        </a>
+
+        <div class="splash"></div>
+
+    </nav>
 
     <div class="media">
         <div>
@@ -40,34 +77,59 @@
         <div>
             <ul class="media-list">
                 <li class="media-item info">
-                    <img src="../assets/media/media/Location.svg" class="media-img" alt="Location">
-                    <p>3 IMM CHERARDA BOURGOGNE CASABLANCA</p>
+                    <img src="../assets/media/media/Phone.svg" class="media-img" alt="Phone">
+                    <p>+212767 500515</p>
                 </li>
                 <li class="media-item info">
                     <img src="../assets/media/media/Phone.svg" class="media-img" alt="Phone">
-                    <p>0644227346 / 07 67500515 0634234506</p>
+                    <p>+212634 234506</p>
+                </li>
+                <li class="media-item info">
+                    <img src="../assets/media/media/Phone.svg" class="media-img" alt="Phone">
+                    <p>+121644 227346</p>
+                </li>
+                <li class="media-item info">
+                    <img src="../assets/media/media/email.svg" class="media-img" alt="Phone">
+                    <p>contact@group7sr.com</p>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div class="main scroll-menu" id="menu-scroll">
+        <div class="div--logo">
+            <div class="align-item-div">
+                <img src="../assets/media/logo/01011-01.svg" class="logo" alt="logo">
+            </div>
+            <div>
+                <ul class="list">
+                    <li class="item">
+                        <a href="../index.html" class="link scroll">الرئيسية</a>
+                    </li>
+                    <li class="item">
+                        <a href="#service" class="link scroll">خدماتنا</a>
+                    </li>
+                    <li class="item">
+                        <a href="../index.html#contact" class="link scroll">إتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="main">
         <div class="div--logo">
             <div class="parent-logo">
-                <img src="../assets/media/logo.PNG" class="logo" alt="logo">
+                <img src="../assets/media/logo/01011-01.svg" class="logo" alt="logo">
             </div>
             <div>
-                <!-- <img src="./assets/media/icon-hamburger.svg" class="hamburger" id='hamburger' alt="hamburger"> -->
                 <ul class="list">
                     <li class="item">
-                        <a href="#" class="link">الرئيسية</a>
-                    </li>
-                    <li class="item">
-                        <a href="../index.html" class="link">من نحن</a>
+                        <a href="../index.html" class="link">الرئيسية</a>
                     </li>
                     <li class="item serv">
-                        <a href="#" class="link">خدماتنا</a>
-                        <ul class="drop-down-list">
+                        <a href="#aaaa" class="link">خدماتنا</a>
+                        <ul class="drop-down-list" id="dropdown">
                             <li>
                                 <a href="waterfall.html">تصميم الشلالات</a>
                             </li>
@@ -90,7 +152,7 @@
                     </li>
 
                     <li class="item">
-                        <a href="#" class="link">إتصل بنا</a>
+                        <a href="../index.html#contact" class="link">إتصل بنا</a>
                     </li>
                 </ul>
             </div>
@@ -109,33 +171,8 @@
         </div>
     </div>
 
-    <header class="hero hero--article ng-scope">
-        <!-- <div class="hero__content">
-            <div class="hero__title  ">
-                <span aria-level="2" role="heading" class="text">
-                    تصميم الشلالات
-                </span>
-            </div>
-            <div class="hero__subtitle">
-                بادر بالتواصل معنا واستمتع بتصميم محاكي للطبيعة واختر تصميم الشلالات المناسب لحديقتك </div>
-        </div> -->
-        <!-- <div class="hero__image ">
+    <header class="hero hero--article ng-scope"></header>
 
-            <svg class="div-rel-img" id="Layer_1" fill='#f7bd4c' enable-background="new 0 0 512.014 512.014"
-                viewBox="0 0 512.014 512.014" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                    <path
-                        d="m241.011 88.005c0-8.284-6.716-15-15-15s-15 6.716-15 15v57c0 8.284 6.716 15 15 15s15-6.716 15-15z" />
-                    <path
-                        d="m286.009 146.005c-8.284 0-15 6.716-15 15v50c0 8.284 6.716 15 15 15s15-6.716 15-15v-50c0-8.284-6.716-15-15-15z" />
-                    <path
-                        d="m252.01 261.005c-8.284 0-15 6.716-15 15v67c0 8.284 6.716 15 15 15s15-6.716 15-15v-67c0-8.284-6.716-15-15-15z" />
-                    <path
-                        d="m501.715 24.22-71.006-23.458c-2.41-.796-9.218-.756-10.154-.756h-335.545c-2.715 0-5.254.732-7.451 1.993l-67.26 22.22c-7.866 2.599-12.137 11.083-9.538 18.949s11.084 12.133 18.948 9.538l65.342-21.587 65.942 30.882v337.671c-1.11-.045-2.221-.075-3.336-.075-45.427 0-82.385 36.958-82.385 82.385 0 6.187.691 12.361 2.055 18.352 1.584 6.957 7.767 11.674 14.612 11.674 1.103 0 2.223-.122 3.343-.377 8.077-1.839 13.136-9.877 11.297-17.955-.867-3.809-1.307-7.743-1.307-11.693 0-28.885 23.5-52.385 52.385-52.385 12.604 0 24.781 4.539 34.289 12.78 3.092 2.679 7.142 3.979 11.214 3.602 4.073-.379 7.814-2.404 10.357-5.607 12.804-16.121 31.933-25.367 52.483-25.367 20.552 0 39.682 9.246 52.484 25.367 2.543 3.203 6.285 5.229 10.357 5.607 4.07.379 8.123-.923 11.214-3.602 9.508-8.241 21.686-12.78 34.289-12.78 28.885 0 52.385 23.5 52.385 52.385 0 3.945-.44 7.878-1.309 11.69-1.841 8.077 3.216 16.117 11.293 17.957 8.081 1.844 16.118-3.215 17.957-11.293 1.366-5.995 2.059-12.171 2.059-18.354 0-45.427-36.958-82.385-82.385-82.385-1.115 0-2.226.03-3.336.075v-337.667l65.953-30.887 65.342 21.587c7.863 2.595 16.349-1.672 18.948-9.538 2.601-7.866-1.67-16.35-9.536-18.948zm-179.455 386.934c-17.855-16.761-41.333-26.149-66.259-26.149-24.925 0-48.402 9.389-66.258 26.149-2.827-1.68-5.752-3.176-8.75-4.502v-353.647c0-.064-.009-.125-.01-.189.132-5.763-3.073-11.335-8.629-13.937l-18.947-8.873h205.198l-18.947 8.873c-5.469 2.561-8.653 8-8.626 13.666-.005.154-.023.305-.023.46v353.648c-2.997 1.326-5.922 2.822-8.749 4.501z" />
-                </g>
-            </svg> 
-        </div>-->
-    </header>
     <main>
         <section class="kintaro-article">
 
@@ -174,13 +211,10 @@
     <script src="../assets/js/main.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>
-        $(function () {
-            $('.drop-down-list').hide();
-            $('.serv').hover(function () {
-                $('.drop-down-list').slideDown();
-            }, function () {
-                $('.drop-down-list').slideUp();
-            });
+        window.addEventListener('scroll', function () {
+            const getMenu = document.getElementById('menu-scroll');
+
+            getMenu.classList.toggle("scroll-menu2", window.scrollY >= 47)
         })
     </script>
 </body>

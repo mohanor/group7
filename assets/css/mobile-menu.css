@@ -33,6 +33,7 @@
   position: relative;
   z-index: 5;
   visibility: hidden;
+  padding: 0;
 }
 .nav__item {
   opacity: 0;
@@ -155,5 +156,27 @@
 
 .nav{
     height: 0;
+    position: relative;
+    z-index: 9;
 }
 
+
+.nav__menu-childList {
+  list-style-type: none;
+  margin-top: 15px;
+  line-height: 30px;
+  padding: 0;
+  display: none;
+}
+
+.nav__menu-childList li {
+  text-align: center;
+}
+
+.nav__menu-childList li a {
+  text-decoration: none;
+}
+
+.ourServiceMenu:hover .nav__menu-childList {
+  display: block;
+}
