@@ -34,6 +34,9 @@
   z-index: 5;
   visibility: hidden;
   padding: 0;
+  background: #212f54;
+  padding: 0;
+  height: 100vh;
 }
 .nav__item {
   opacity: 0;
@@ -100,8 +103,9 @@
   right: 40px;
   width: 1px;
   height: 1px;
+  
 }
-.splash::after {
+/* .splash::after {
   content: "";
   display: block;
   position: absolute;
@@ -116,7 +120,7 @@
   transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
   will-change: transform;
   z-index: 1;
-}
+} */
 
 .nav:target > .splash::after,
 .nav--open > .splash::after {
