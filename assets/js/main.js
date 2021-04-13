@@ -33,6 +33,7 @@ menuToggle.addEventListener('click', e => {
     menuToggle.setAttribute('aria-expanded', String(isMenuOpen));
     menu.hidden = !isMenuOpen;
     nav.classList.toggle('nav--open');
+    nav.classList.toggle('nav-show');
 });
 
 for (let i = 0; i < scrollLinkjs.length; i++) {

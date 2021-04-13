@@ -83,7 +83,6 @@ menu {
 }
 
 .hero__content {
-    z-index: 1;
     position: absolute;
     color: #ffffff;
     top: 50%;

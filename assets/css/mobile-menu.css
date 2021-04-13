@@ -158,8 +158,19 @@
     height: 0;
     position: relative;
     z-index: 9;
+    
 }
 
+.nav-show {
+  position: absolute;
+  z-index: 9;
+  height: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
 
 .nav__menu-childList {
   list-style-type: none;
@@ -177,6 +188,6 @@
   text-decoration: none;
 }
 
-.ourServiceMenu:hover .nav__menu-childList {
+.show_nav__menu-childList {
   display: block;
 }

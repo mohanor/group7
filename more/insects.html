@@ -24,9 +24,9 @@
         <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
             <li class="nav__item"><a href="../index.html" class="nav__link scroll">الرئيسية</a></li>
 
-            <li class="nav__item ourServiceMenu">
+            <li class="nav__item ourServiceMenu" id="myDropdown">
                 <span class="nav__link scroll">خدماتنا</span>
-                <ul class="nav__menu-childList">
+                <ul class="nav__menu-childList" id="show-list">
                     <li><a href="jardins.html">البستنة</a></li>
                     <li><a href="info.html">صيانة مسابح</a></li>
                     <li><a href="waterfall.html">تصميم الشلالات</a></li>
@@ -223,6 +223,14 @@
 
             getMenu.classList.toggle("scroll-menu2", window.scrollY >= 47)
         })
+
+        const myDropdown = document.getElementById("myDropdown");
+        const showList = document.getElementById("show-list");
+
+        myDropdown.addEventListener('click', () => {
+            showList.classList.toggle("show_nav__menu-childList");
+        })
+
     </script>
 
 </body>
