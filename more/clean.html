@@ -298,6 +298,13 @@
 
             getMenu.classList.toggle("scroll-menu2", window.scrollY >= 47)
         })
+
+        const myDropdown = document.getElementById("myDropdown");
+        const showList = document.getElementById("show-list");
+
+        myDropdown.addEventListener('click', () => {
+            showList.classList.toggle("show_nav__menu-childList");
+        })
     </script>
 
 </body>
