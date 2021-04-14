@@ -19,11 +19,15 @@
 .img-disc {
     height: 300px;
     width: 100%;
-    background-image: url(https://images.pexels.com/photos/950251/pexels-photo-950251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url(https://images.pexels.com/photos/5027619/pexels-photo-5027619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     position: relative;
+}
+
+.img-disc-position {
+    background-position: center bottom;
 }
 
 .info-disc {
@@ -32,6 +36,7 @@
 
 .info-disc {
     background-image: url(../media/pexels-photo-221457.jpeg);
+    background-position: center bottom;
 }
 
 .insects {
@@ -39,11 +44,16 @@
 }
 
 .falls {
-    background-image: url(https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+    background-image: url(https://images.pexels.com/photos/3681787/pexels-photo-3681787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.falls2 {
+    background-image: url(../media/laa/artificial-waterfall.svg);
 }
 
 .secerity {
-    background-image: url(https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url(https://images.unsplash.com/photo-1485230405346-71acb9518d9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=771&q=80);
+
 }
 
 .drop-down-list, .drop-down-list-scroll {
@@ -200,7 +210,7 @@
     }
 
     .secerity {
-        background-position: center -124px;
+        background-position: center -316px;
     }
     
 }
