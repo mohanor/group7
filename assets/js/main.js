@@ -26,7 +26,7 @@ let isMenuOpen = false;
 // TOGGLE MENU ACTIVE STATE 
 menuToggle.addEventListener('click', e => {
     e.preventDefault();
-    body.style.overflowX = 'hidden';
+    // body.style.overflowX = 'hidden';
     isMenuOpen = !isMenuOpen;
 
     // toggle a11y attributes and active class

@@ -40,7 +40,7 @@
 }
 .nav__item {
   opacity: 0;
-  transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
+  /* transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s; */
   padding: 15px;
   border-bottom: 1px solid hsl(0deg 0% 48% / 17%)
 }
