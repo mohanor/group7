@@ -46,7 +46,7 @@
     background-image: url(https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
-.drop-down-list{
+.drop-down-list, .drop-down-list-scroll {
     list-style-type: none;
     padding: 0;
     background: #FFF;
@@ -54,7 +54,7 @@
     top: 122px;
     border-top: 1px solid #e0e0e0;
     position: absolute;
-    display: flex;
+    display: none;
     justify-content: center;
     left: 0;
     right: 0;
@@ -62,22 +62,25 @@
     height: 63px;
     box-shadow: 0 2px 4px -2px rgb(175 175 175 / 50%);
     box-sizing: border-box;
-    opacity: 0;
 }
 
-.drop-down-list li {
+.drop-down-list-scroll {
+    top: 78px;
+}
+
+.drop-down-list li, .drop-down-list-scroll li {
     padding: 4px 30px;
     text-align: center;
 }
 
-.drop-down-list li a{
+.drop-down-list li a, .drop-down-list-scroll li a{
     text-decoration: none;
     color: #3e4a6a;
     font-size: 19px;
 }
 
 
-.serv::after{
+.serv::after, .serv-scroll::after {
     position: absolute;
     left: 28.5%;
     top: 122px;
@@ -95,12 +98,25 @@
     z-index: 9;
 }
 
+.serv-scroll::after {
+    top: 78px;
+}
+
 .serv:hover::after {
     opacity: 1;
 }
 
-.serv:hover .drop-down-list {
+.serv-scroll:hover::after {
     opacity: 1;
+}
+
+.serv:hover .drop-down-list {
+    display: flex;
+    z-index: 9;
+}
+
+.serv-scroll:hover .drop-down-list-scroll {
+    display: flex;
     z-index: 9;
 }
 
