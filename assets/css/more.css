@@ -113,9 +113,73 @@ menu {
 }
 
 
+.all-card,
+        .ser-card {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+
+        .ser-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .ser-card p {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .card {
+            background-color: white;
+            color: #5c6681;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            text-align: right;
+            padding: 16px 24px;
+        }
+
+        .ser-card .card {
+            padding: 0;
+        }
+
+        .ser-card .child-card {
+            padding: 0 15px 10px;
+        }
+
+        .ser-card .child-card p {
+            font-size: 15px;
+        }
+
+        .jardin-color {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            margin-top: 50px;
+        }
+
+        .jardin-color img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        .color-l {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: justify;
+        }
+
+        .h3-none {
+            display: block;
+        }
+        
+        .h3-none-2 {
+            display: none;
+        }
 
 @media (min-width: 768px){
-
     #menu-scroll {
         display: block;
     }
@@ -198,6 +262,44 @@ menu {
 
     .hero__subtitle {
         font-size: 23px;
+    }
+
+    .all-card,
+    .ser-card {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ser-card {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .jardin-color {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .jardin-color h3 {
+        margin: 0;
+    }
+
+    .mt-70 {
+        margin-top: 70px;
+    }
+
+    .mt-50 {
+        margin-top: 50px;
+    }
+    
+    .h3-none {
+        display: none;
+    }
+    
+    .h3-none-2 {
+        display: block;
+    }
+
+    .jardin-color p {
+        padding-bottom: 0;
+        margin: 0;
     }
 }
 
