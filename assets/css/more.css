@@ -314,14 +314,11 @@ menu {
     }
 
     .d-flex {
-       
-        flex-direction: row;
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
     }
 
-    .d-flex > div {
-        flex: .5;
-    }
 }
 
 @media (min-width: 1024px){
