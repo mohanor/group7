@@ -179,6 +179,17 @@ menu {
             display: none;
         }
 
+        .d-flex {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 50px;
+        }
+
+        .d-flex img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
 @media (min-width: 768px){
     #menu-scroll {
         display: block;
@@ -239,7 +250,7 @@ menu {
     .hero--article {
         margin-bottom: 80px;
         margin-top: 0px;
-        padding-top: 60px;
+        padding-top: 0px;
     }
 
     .kintaro-article {
@@ -300,6 +311,16 @@ menu {
     .jardin-color p {
         padding-bottom: 0;
         margin: 0;
+    }
+
+    .d-flex {
+       
+        flex-direction: row;
+        
+    }
+
+    .d-flex > div {
+        flex: .5;
     }
 }
 
