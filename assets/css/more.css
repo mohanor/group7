@@ -253,6 +253,7 @@ menu {
 
         .slidetext {
             padding: 0 10px;
+            text-align: right;
         }
 
         .slidetext p {
@@ -300,7 +301,20 @@ menu {
         .first-div img {
             width: 100%;
         }
+
+        .desktop-img {
+            display: none;
+        }
+
 @media (min-width: 768px){
+
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+    }
 
     .first-div {
         display: flex;
@@ -324,6 +338,7 @@ menu {
 
     .first-div > div {
         flex: .5;
+        overflow: hidden;
     }
 
     .first-div h3 {
@@ -337,7 +352,7 @@ menu {
     }
 
     .parent-of-slick {
-        width: 100%;
+        width: 90%;
     }
 
     .menu-list {
@@ -485,6 +500,7 @@ menu {
     .kintaro-article {
         margin: 40px auto;
     }
+
     .hero {
         padding-top: 15px;
         padding-right: 70px;
