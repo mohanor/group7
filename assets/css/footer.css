@@ -44,6 +44,5 @@
 @media only screen and (min-width: 768px){
 .footer {
     display: flex;
-    padding: 60px 20px;
 }
 }

@@ -1,13 +1,15 @@
 const getFooter = document.getElementById('footer');
 const footer = `
-        <footer class="footer">
+        <div class="parent-logo">
+            <img src="../assets/media/logo/0101-01.svg" class="footer-logo" alt="">
+        </div>
+        <div class="footer">
             <div>
                 <h3>
                     من نحن
                 </h3>
                 <p>
-                    مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
-
+                    شركة مغربية مقرنا بدار البيضاء ونقدم خدامتنا في جميع أنحاء المملكة المغربية
                 </p>
             </div>
             <div>
@@ -15,8 +17,7 @@ const footer = `
                     موقعنا
                 </h3>
                 <p>
-                    مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
-
+                    3 IMM CHERARDA BOURGOGNE CASABLANCA
                 </p>
             </div>
             <div>
@@ -24,8 +25,7 @@ const footer = `
                     فريقنا
                 </h3>
                 <p>
-                    مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة
-
+                    فريق محترف ومتكامل نهدف من خلاله إلى توفير خدمات ذات كفائة وجودة عالية لعملائنا
                 </p>
             </div>
             <div>
@@ -48,7 +48,7 @@ const footer = `
                     </li>
                 </ul>
             </div>
-        </footer>
+        </div>
 
         <div class="copywrite">
             <strong>جميع الحقوق محفوظة ل group7sr</strong>
